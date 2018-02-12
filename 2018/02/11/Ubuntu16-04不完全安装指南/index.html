@@ -8,12 +8,13 @@
   <title>Ubuntu16.04不完全安装指南 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="基本配置 VMware Tools的安装（及共享文件夹的设置），然后设置分辨率做到全屏。  改变下载源，以提高之后所有下载任务的速度  Setting=&amp;gt;Software&amp;amp;Downloads=&amp;gt;download from__   卸载Amazon 1sudo apt-get remove unity-webapps-common 卸载Firefox 123dpkg --get-">
+<meta name="keywords" content="安装基本满足编程需求的Ubuntu16.04">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu16.04不完全安装指南">
 <meta property="og:url" content="http://yoursite.com/2018/02/11/Ubuntu16-04不完全安装指南/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基本配置 VMware Tools的安装（及共享文件夹的设置），然后设置分辨率做到全屏。  改变下载源，以提高之后所有下载任务的速度  Setting=&amp;gt;Software&amp;amp;Downloads=&amp;gt;download from__   卸载Amazon 1sudo apt-get remove unity-webapps-common 卸载Firefox 123dpkg --get-">
-<meta property="og:updated_time" content="2018-02-12T09:47:29.983Z">
+<meta property="og:updated_time" content="2018-02-12T16:49:54.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04不完全安装指南">
 <meta name="twitter:description" content="基本配置 VMware Tools的安装（及共享文件夹的设置），然后设置分辨率做到全屏。  改变下载源，以提高之后所有下载任务的速度  Setting=&amp;gt;Software&amp;amp;Downloads=&amp;gt;download from__   卸载Amazon 1sudo apt-get remove unity-webapps-common 卸载Firefox 123dpkg --get-">
@@ -113,7 +114,7 @@
 <p>安装搜狗输入法</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>从 http://pinyin.sogou.com/linux/ 下载deb包</span><br><span class="line">cd ~/Downloads/</span><br><span class="line">ls</span><br><span class="line">sudo dpkg -i #deb_pack's name#</span><br><span class="line"><span class="meta">#</span>Setting=&gt;Language Suport=&gt;Choose fcitx</span><br><span class="line"><span class="meta">#</span>如果出错，则输入sudo apt-get install -f  </span><br><span class="line"><span class="meta">#</span>安装完成后重启 $ sudo reboot</span><br><span class="line"><span class="meta">#</span>重启后在右上角选择输入法=&gt;Configuration=&gt;添加输入法=&gt;去掉Only Show Current Language的框选√=&gt;找到sogou pinyin=&gt;点击添加=&gt;再次reboot</span><br></pre></td></tr></table></figure>
 <p>安装网易云</p>
-<p>​    安装方式同搜狗输入法，也是下载deb包并用dpkg安装，注意如果出错，需要重新sudo apt-get -f install 配置环境。</p>
+<p>安装方式同搜狗输入法，也是下载deb包并用dpkg安装，注意如果出错，需要重新sudo apt-get -f install 配置环境。</p>
 </li>
 </ol>
 <h3 id="界面配置"><a href="#界面配置" class="headerlink" title="界面配置"></a>界面配置</h3><ol>
@@ -126,11 +127,11 @@
 <li><p>桌面及扁平化图标皮肤</p>
 <p>详细安装见<a href="https://github.com/anmoljagetia/Flatabulous" target="_blank" rel="noopener">github链接</a>，桌面壁纸自选。</p>
 <blockquote>
-<p>以上界面配置均参考自<a href="[参考](http://www.360doc.com/content/16/0614/16/30532768_567725948.shtml">链接</a>)</p>
+<p>以上界面配置均参考自<a href="[参考](http://www.360doc.com/content/16/0614/16/30532768_567725948.shtml">链接</a></p>
 </blockquote>
 </li>
 <li><p>终端透明度设置</p>
-<p>​    在终端中点击右键选择Profiles  中的Profiles Preferences弹出编辑框，选择Color选中Use transprent background,拖动进度条。</p>
+<p>在终端中点击右键选择Profiles  中的Profiles Preferences弹出编辑框，选择Color选中Use transprent background,拖动进度条。</p>
 </li>
 </ol>
 <h2 id="自选配置"><a href="#自选配置" class="headerlink" title="自选配置"></a>自选配置</h2><ol>
@@ -152,26 +153,34 @@
 </ol>
 <h2 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h2><ol>
 <li>在typora下，该md文档转成pdf后，shell代码块中所有的短划线-都不对（可能是半角和全角识别有误），如果需要粘贴代码，则从md文档中粘贴即可。其他md编辑器没有进行过测试。</li>
+</ol>
+<ol>
 <li>存了一版虚拟机环境，除了未安装网易云音乐，<strong>基本配置</strong>及<strong>界面配置</strong>都齐了。</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/11/Ubuntu16-04不完全安装指南/" data-id="cjdjwgou20000tjjxvsu7oco7" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/11/Ubuntu16-04不完全安装指南/" data-id="cjdkgf8bg0000cujx4mg37x8o" class="article-share-link">Teilen</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装基本满足编程需求的Ubuntu16-04/">安装基本满足编程需求的Ubuntu16.04</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-  
-    <a href="/2018/02/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2018/02/12/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -186,9 +195,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/note-about-Hungyi-Lee-s-PPT-named-Learn-deeplearning-in-one-day/">note about Hungyi Lee's PPT named ++Learn deeplearning in one day++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安装基本满足编程需求的Ubuntu16-04/">安装基本满足编程需求的Ubuntu16.04</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/note-about-Hungyi-Lee-s-PPT-named-Learn-deeplearning-in-one-day/" style="font-size: 10px;">note about Hungyi Lee's PPT named ++Learn deeplearning in one day++</a> <a href="/tags/安装基本满足编程需求的Ubuntu16-04/" style="font-size: 10px;">安装基本满足编程需求的Ubuntu16.04</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -207,11 +230,15 @@
       <ul>
         
           <li>
-            <a href="/2018/02/11/Ubuntu16-04不完全安装指南/">Ubuntu16.04不完全安装指南</a>
+            <a href="/2018/02/13/DeepLearningTutorial/">DeepLearningTutorial</a>
           </li>
         
           <li>
-            <a href="/2018/02/11/hello-world/">Hello World</a>
+            <a href="/2018/02/12/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/11/Ubuntu16-04不完全安装指南/">Ubuntu16.04不完全安装指南</a>
           </li>
         
       </ul>
